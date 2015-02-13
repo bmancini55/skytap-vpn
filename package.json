@@ -1,0 +1,20 @@
+{
+  "name": "skytap-vpn",
+  "version": "1.0.0",
+  "description": "Scripts for attaching and detaching VPN connections",
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^2.1.1",
+    "minimist": "^1.1.0",
+    "node-skytap": "^0.4.0"
+  },
+  "repository": "bmancini55/skytap-vpn",
+  "keywords": [
+    "skytap",
+    "vpn",
+    "attach",
+    "detach"
+  ],
+  "author": "Brian Mancini <bmancini@gmail.com>",
+  "license": "MIT"
+}
