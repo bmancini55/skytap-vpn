@@ -13,8 +13,8 @@ var fs        = require('fs')
 
 // script usage
 if(!username || !token || !vpn_id || !out) {
-  console.log('Usage: node catalogue --username="SOME_USER" --token="TOKEN" --vpn="VPN_ID" --out="OUTPUT_PATH');
-  console.log('       node catalogue -u "SOME_USER" -t "TOKEN" -v "VPN_ID" -o "OUTPUT_PATH"');
+  console.log('Usage: node catalog --username="SOME_USER" --token="TOKEN" --vpn="VPN_ID" --out="OUTPUT_PATH');
+  console.log('       node catalog -u "SOME_USER" -t "TOKEN" -v "VPN_ID" -o "OUTPUT_PATH"');
   process.exit();
 }
 
@@ -57,7 +57,7 @@ function processEnv(env, next) {
         if(network.vpn_attachments) {
           network.vpn_attachments.forEach(function(attachment) {            
 
-            // ensure this is the vpn we want to catalogue
+            // ensure this is the vpn we want to catalog
             if(attachment.vpn.id === vpn_id) {              
               var result = { 
                 'network_id': attachment.network.id,

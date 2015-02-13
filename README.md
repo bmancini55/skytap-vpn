@@ -3,10 +3,10 @@ Utilities for attaching/detaching VPN resources
 
 ##Usage
 
-Get network attachment for a VPN
+Catalog VPN attachments
 ```
-node catalogue --username="SOME_USER" --token="TOKEN" --vpn="VPN_ID" --out="OUTPUT_PATH"
-node catalogue -u "SOME_USER" -t "TOKEN" -v "VPN_ID" -o "OUTPUT_PATH"
+node catalog --username="SOME_USER" --token="TOKEN" --vpn="VPN_ID" --out="OUTPUT_PATH"
+node catalog -u "SOME_USER" -t "TOKEN" -v "VPN_ID" -o "OUTPUT_PATH"
 ```
 
 This produces a file in the outpu location that is of the format:
