@@ -26,6 +26,11 @@ skytap = Skytap.init({
 
 // retrieve all environments
 skytap.environments.all(function(err, envs) {
+  if(err) {
+    console.log(err);
+    process.exit();
+  }
+  
   console.log('found %s environments', envs.length);
 
   // parse each environment
